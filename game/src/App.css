@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+#root {
+  background: #fb9062;
+  height: 100vh;
+  width: 100vw;
+}
+
+.status-box {
+  position: absolute;
+  top: 50vh;
+  left: 5vw;
+  transform: translateY(-50%);
+  background: #ee5d6c;
+  height: 45vh;
+  width: 35vw;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 15vh;
+  border-radius: 3vh;
+}
+
+h1 {
+  font-size: 8vh;
+}
+
+h2 {
+  font-size: 5vh;
+}
+
+.restart {
+  display: none;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background: #e74152;
+  height: 7vh;
+  width: 10vw;
+  border: none;
+  border-radius: 2vh;
+  transform: translateY(-35%);
+  transition-duration: 350ms;
+}
+
+.restart:hover {
+  color: #e74152;
+  background: #ffffff;
+  transform: scale(1.08) translateY(-33%);
+}
+
+.game-box {
+  position: absolute;
+  top: 50vh;
+  right: 10vw;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vh;
+  height: 70vh;
+  width: 70vh;
+  border-radius: 2vh;
+  overflow: hidden;
+}
+  
+.square {
+  background: #f7af78;
+  cursor: pointer;
+  border: none;
+  transition: 350ms;
+  font-size: 15vh;
+  font-weight: 500;
+}
+  
+.square:hover {
+  background: #f5c29b;
+}
